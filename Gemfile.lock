@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    capistrano-database-yml (1.0.0)
+    capistrano-database-yml (1.0.1)
       capistrano (>= 3.1)
       sshkit (>= 1.2.0)
 
