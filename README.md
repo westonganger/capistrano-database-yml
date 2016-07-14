@@ -1,7 +1,7 @@
 # Capistrano::DatabaseYml
 
 Capistrano tasks for handling `database.yml` when deploying Rails 4+ apps.
-This is a slightly modified clone of [capistrano-secrets-yml](https://github.com/capistrano-plugins/capistrano-secrets-yml)
+This is a slightly modified clone of [capistrano-secrets-yml](https://github.com/capistrano-plugins/capistrano-secrets-yml).
 
 ### Install
 
@@ -24,7 +24,7 @@ And then:
 - populate production database in local `config/database.yml`:
 
         production:
-          secret_key_base: d6ced...
+          adapter: mysql2
 
 - add to `Capfile`:
 
@@ -53,7 +53,6 @@ You can now proceed with other deployment tasks.
 
 - notify your colleagues that have the deploy rights that the remote
   `database.yml` has been updated so they can change their copy.
-
 
 ### How it works
 
