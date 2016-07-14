@@ -1,21 +1,21 @@
 # -*- encoding: utf-8 -*-
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "capistrano/secrets_yml/version"
+require "capistrano/database_yml/version"
 
 Gem::Specification.new do |gem|
-  gem.name          = "capistrano-secrets-yml"
-  gem.version       = Capistrano::SecretsYml::VERSION
-  gem.authors       = ["Bruno Sutic"]
-  gem.email         = ["bruno.sutic@gmail.com"]
+  gem.name          = "capistrano-database-yml"
+  gem.version       = Capistrano::DatabaseYml::VERSION
+  gem.authors       = ["Shimpei Otsubo"]
+  gem.email         = ["potsbo@gmail.com"]
   gem.description   = <<-EOF.gsub(/^\s+/, "")
-    Capistrano tasks for automating `secrets.yml` file handling for Rails 4+ apps.
+    Capistrano tasks for automating `database.yml` file handling for Rails 4+ apps.
 
-    This plugins syncs contents of your local secrets file and copies that to
+    This plugins syncs contents of your local database file and copies that to
     the remote server.
   EOF
-  gem.summary       = "Capistrano tasks for automating `secrets.yml` file handling for Rails 4+ apps."
-  gem.homepage      = "https://github.com/capistrano-plugins/capistrano-secrets-yml"
+  gem.summary       = "Capistrano tasks for automating `database.yml` file handling for Rails 4+ apps."
+  gem.homepage      = "https://github.com/capistrano-plugins/capistrano-database-yml"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
