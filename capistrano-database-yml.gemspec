@@ -15,7 +15,7 @@ Gem::Specification.new do |gem|
     the remote server.
   EOF
   gem.summary       = "Capistrano tasks for automating `database.yml` file handling for Rails 4+ apps."
-  gem.homepage      = "https://github.com/capistrano-plugins/capistrano-database-yml"
+  gem.homepage      = "https://github.com/potsbo/capistrano-database-yml"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
