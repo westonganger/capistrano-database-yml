@@ -16,8 +16,6 @@ namespace :database_yml do
   end
 
   task :check_git_tracking do
-    next unless system("git ls-files #{fetch(:database_yml_local_path)} --error-unmatch >/dev/null 2>&1")
-    check_git_tracking_error
     exit 1
   end
 
