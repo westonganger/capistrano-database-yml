@@ -15,10 +15,6 @@ namespace :database_yml do
     exit 1
   end
 
-  task :check_git_tracking do
-    exit 1
-  end
-
   task :check_config_present do
     next unless local_database_yml(database_yml_env).nil?
     check_config_present_error
@@ -28,7 +24,6 @@ namespace :database_yml do
   desc "database.yml file checks"
   task :check do
     invoke "database_yml:check_database_file_exists"
-    invoke "database_yml:check_git_tracking"
     invoke "database_yml:check_config_present"
   end
 
